@@ -1,6 +1,14 @@
 # StudyPilot — Full-Stack Adaptive AI Study Planner
 
-> **Production-grade full-stack adaptive study planner designed for college students and engineering candidates.**
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://studypilot-gilt.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/sumithalanke46/studypilot)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+[![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react)](https://react.dev)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+[![Pytest](https://img.shields.io/badge/Pytest-16_Passing-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org)
+
+> **Live Application**: 👉 **[https://studypilot-gilt.vercel.app](https://studypilot-gilt.vercel.app)**  
+> **Demo Account**: `demo@studypilot.io` / `password123` *(or click the "1-Click Demo Login" button)*
 
 StudyPilot eliminates the guesswork in exam preparation. Unlike generic timetable generators or shallow ChatGPT wrappers, StudyPilot pairs a **deterministic multi-factor Python scheduling and optimization engine** with **persistent relational tracking**, **real-time readiness metrics**, **spaced-repetition topic scoring**, **adaptive missed-day recovery**, and a **context-aware AI Tutor**.
 
