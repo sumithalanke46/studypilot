@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Dynamically use VITE_API_URL or fallback to local backend port 8000
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+// Dynamically use VITE_API_URL or fallback to your live Render backend
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://studypilot-backend-e6e7.onrender.com/api/v1';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
