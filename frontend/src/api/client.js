@@ -1,7 +1,14 @@
 import axios from 'axios';
 
-// Dynamically use VITE_API_URL or fallback to your live Render backend
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://studypilot-backend-e6e7.onrender.com/api/v1';
+// Smart Base URL resolution with automatic fallback and sanitation
+let rawUrl = (import.meta.env.VITE_API_URL || '').trim();
+if (!rawUrl || rawUrl.includes('dashboard.render.com') || rawUrl.includes('localhost')) {
+  rawUrl = 'https://studypilot-backend-e6e7.onrender.com/api/v1';
+}
+if (!rawUrl.endsWith('/api/v1') && !rawUrl.endsWith('/api/v1/')) {
+  rawUrl = rawUrl.replace(/\/+$/, '') + '/api/v1';
+}
+const API_BASE_URL = rawUrl;
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
